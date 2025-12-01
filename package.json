@@ -1,0 +1,25 @@
+{
+  "name": "shabd-setu",
+  "version": "1.0.0",
+  "description": "A blogging platform with API and client",
+  "scripts": {
+    "test": "npm run test:api && npm run test:client",
+    "test:api": "cd api && npm test",
+    "test:client": "cd client && npm test",
+    "test:coverage": "npm run test:api:coverage && npm run test:client:coverage",
+    "test:api:coverage": "cd api && npm test -- --coverage",
+    "test:client:coverage": "cd client && npm test -- --coverage"
+  },
+  "devDependencies": {
+    "@types/node": "^24.5.1",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "entities": "^7.0.0",
+    "firebase": "^12.3.0",
+    "nodemailer": "^7.0.10"
+  }
+}
